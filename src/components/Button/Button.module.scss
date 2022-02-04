@@ -1,0 +1,25 @@
+@import "@Styles/variables";
+
+.button {
+  background-color: $black;
+  border: none;
+  font-family: inherit;
+  margin: 0;
+  padding: 0 26px;
+  height: 52px;
+  color: white;
+  border-radius: 999px;
+  font-weight: $bold;
+  font-size: 18px;
+  border: 2px solid transparent;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+
+    border: 2px solid $black;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,35 @@
+@import "@Styles/variables";
+@import "@Styles/mixins";
+
+.wallet {
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    .content {
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 52px;
+      padding: 0 $space-large;
+      margin-right: $space-large;
+      border-radius: 12px;
+      background-color: white;
+      box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+      -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+      font-weight: $bold;
+      cursor: pointer;
+
+      .avatar {
+        margin-right: 8px;
+      }
+
+      @include respond(xsmall) {
+        display: none;
+      }
+    }
+  }
+}

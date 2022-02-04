@@ -1,0 +1,76 @@
+@import "@Styles/variables";
+
+.create {
+  max-width: $container-width;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  .header {
+    font-size: $font-medium;
+    font-weight: $bold;
+    margin-bottom: $space-large;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .createForm {
+    display: flex;
+    margin-top: 25px;
+
+    .nftCard {
+      width: 300px;
+    }
+
+    .inputs {
+      margin-right: 40px;
+      display: flex;
+      flex-direction: column;
+      max-width: 450px;
+      min-width: 350px;
+
+      .inputField {
+        display: flex;
+        align-items: center;
+        border: 2px solid $black;
+        margin-bottom: $space-large;
+        border-radius: 3px;
+
+        .label {
+          background-color: $black;
+          color: $white;
+          padding: 12px;
+        }
+
+        .input {
+          width: 100%;
+          margin-left: 4px;
+          border: none;
+          outline: none;
+
+          &:focus {
+            border-color: $black;
+          }
+        }
+      }
+
+      .fileProgress {
+        margin-top: $space-large;
+        width: 100%;
+        height: 8px;
+        border-radius: 24px;
+        overflow: hidden;
+        .progressBar {
+          background-color: $black;
+          height: 8px;
+          color: $black;
+        }
+      }
+
+      .createButton {
+        margin-top: auto;
+      }
+    }
+  }
+}

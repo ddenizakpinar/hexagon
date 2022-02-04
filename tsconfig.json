@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "rootDirs": ["./src", "./scripts", "./test", "./artifacts"],
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@Components/*": ["./src/components/*"],
+      "@Pages/*": ["./src/pages/*"],
+      "@Utils/*": ["./src/utils/*"],
+      "@Styles/*": ["./src/styles/*"],
+      "@Layouts/*": ["./src/layouts/*"],
+      "@Lib/*": ["./src/lib/*"],
+      "@Hooks/*": ["./src/hooks/*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "exclude": ["dist", "node_modules"],
+  "files": ["./hardhat.config.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}

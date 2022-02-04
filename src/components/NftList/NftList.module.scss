@@ -1,0 +1,30 @@
+@import "@Styles/mixins";
+@import "@Styles/variables";
+
+.nftList {
+  width: 100%;
+  grid-gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    width: 100%;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include respond(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include respond(medium) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include respond(small) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include respond(xsmall) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

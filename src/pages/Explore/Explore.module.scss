@@ -1,0 +1,13 @@
+@import "@Styles/variables";
+
+.explore {
+  max-width: $container-width;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  .header{
+    font-size: $font-medium;
+    font-weight: $bold;
+    margin-bottom: $space-large;
+  }
+}
